@@ -26,3 +26,8 @@ This repository demonstrates a tiny reproducible MLOps flow:
     python src/app.py
    Then test:
     curl -X POST "http://127.0.0.1:5000/predict" -H "Content-Type: application/json" -d '{"features":[5.1,3.5,1.4,0.2]}'
+
+curl.exe --globoff -X POST http://127.0.0.1:5001/predict -H "Content-Type: application/json" -d "{\"features\":[4,6,2,5]}"
+{"prediction":0}
+
+C:\Users\arnavdeep>curl.exe --globoff -X POST http://127.0.0.1:5001/predict -H "Content-Type: application/json" -d "{\"features\":[4.6,26,42,55]}"
